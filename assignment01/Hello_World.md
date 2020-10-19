@@ -1,3 +1,3 @@
 # Hello World
 
-![Hello World](/hello_world.PNG)
+![Hello World](assignment01/hello_world.PNG)
