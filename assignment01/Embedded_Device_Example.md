@@ -1,0 +1,19 @@
+# Embedded Device Example
+
+## MP4 player with a touch screen
+
+### Synchronization
+
+A MP4 player is a portable media player, and its functionality is primary playing video. If a device is composed of a single core of microprocessor or microcontroller, it only can process an instruction at a time but cannot parallel multiple ones. To avoid a human-aware time shift between image and audio, a MP4 player must switches frequently between sending image streasm to a display and sending audio streams to an audio controller. Besides, how much time image and audio process have to be profiled precisely because a designer have to know how much time, maybe in microsecond, they should invoke either in image process or audio process to make both of them synchronized.
+
+### Battery Recharging Management
+
+A portable MP4 player must have a battery. It might be a replaceable one or a built-in rechargeable one. For a built-in power storage, a device must provide a port to user to be able to recharge a battery. In the case that a power storage is recharged to 100%, if a power still recharges a battery, it not only wastes power but also probably damages the battery. The times that a battery can reuse will decrease because of improper usage. To keep battery life more long, managing a battery in no matter charging phase or recharging phase is non-trivial.
+
+### Throughput
+
+A MP4 player must play a stream above a minimum frame rate. If it is lower than the lower bound, users will observe a freeze or delay in a stream. The situation is not allowed. The throughput can be briefly split into three perspectives: reading throughput from built-in data storage, decoding throughput, and data sending throughput. In usual microcontrollers, they don't have a huge ram to store data, so data is moved from external storage like nor flash, SD card, USB, or else, to microcontroller's internal ram for further processing. The width of peripheral bus and the responds in each storage command are vital factor. It is in term of how many sizes a chunk should be. The more large a chuck is, the less times a chuck takes in transportation between storage and ram. Then decoding is crucial part in throughput. In some modern SoC like Cortex M7 from STM32, it provides built-in hardware decoding unit like JPEG codec. It is obvious that hardware decoding is faster than software decoding in most cases. However, if a chip doesn't have such hardware unit, there might be some solutions to enhance decoding and encoding like SIMD. SIMD is an abbreviation of "Single Instruction Multiple Data", and that is, this sort of instructions have capability in manipulating an arithmetic operation with more than two data chucks in only one instruction. It can boost process time when there are many data that are manipulated in a same operation. The peripheral throughput is another factor. If data is sending by polling, in majority, a following data has to wait previous one via checking sending-complete register of a peripheral. If transportation of data replaces from polling to DMA(direct memory access), sometimes a sending process will be more fast.
+
+### Capability for being accessed from external device
+
+A MP4 player have a built-in storage for placing video films or audio films, so it must provide an access port for external device like laptop or PC to update new files into its storage. Hence, a MP4 player have to deal two situations: one is playing video, and the other is connected to other device to provide access of its storage. A MP4 play has to switch to this kind of special operation mode, so it has to be able to detect that external port is connected and then switch to storage operation mode.
