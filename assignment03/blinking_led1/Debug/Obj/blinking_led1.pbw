@@ -1,0 +1,408 @@
+[
+  {
+    "ID": "c:main.c@37@macro@PERIPH_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PERIPH_BASE",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "PERIPH_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@73@macro@APB1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "APB1_BASE",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "APB1_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@112@macro@APB2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "APB2_BASE",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "APB2_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@155@macro@AHB1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "AHB1_BASE",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "AHB1_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@198@macro@AHB2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "AHB2_BASE",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "AHB2_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@317@macro@RCC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_BASE",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@358@macro@RCC_AHB1ENR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHB1ENR",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_AHB1ENR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@418@macro@RCC_AHB2ENR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHB2ENR",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_AHB2ENR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@478@macro@RCC_APB1ENR1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_APB1ENR1",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_APB1ENR1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@539@macro@RCC_APB1ENR2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_APB1ENR2",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_APB1ENR2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@600@macro@RCC_APB2ENR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_APB2ENR",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_APB2ENR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@662@macro@RCC_AHB2_GPIOA",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHB2_GPIOA",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_AHB2_GPIOA",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@695@macro@RCC_AHB2_GPIOB",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHB2_GPIOB",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "RCC_AHB2_GPIOB",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@743@macro@GPIOA_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_BASE",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOA_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@781@macro@GPIOB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOB_BASE",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOB_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@823@macro@GPIOx_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOx_MODER",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOx_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@850@macro@GPIOx_ODR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOx_ODR",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOx_ODR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@878@macro@GPIOA_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_MODER",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOA_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@947@macro@GPIOA_ORD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_ORD",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "GPIOA_ORD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1014@macro@MODE_00",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODE_00",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "MODE_00",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1037@macro@MODE_01",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODE_01",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "MODE_01",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1060@macro@MODE_10",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODE_10",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "MODE_10",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1083@macro@MODE_11",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODE_11",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "MODE_11",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1108@macro@PIN5",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PIN5",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "PIN5",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1128@macro@MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MODER",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1178@macro@ORD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ORD",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "ORD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@F@delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay(void)",
+    "location": {
+      "column": "20",
+      "line": "44",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1242@F@delay@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\blinking_led1\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]
