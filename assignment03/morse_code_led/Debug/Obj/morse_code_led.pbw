@@ -3464,35 +3464,35 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1562@macro@morse_base",
+    "ID": "c:main.c@1562@macro@MORSE_BASE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "morse_base",
+    "display": "MORSE_BASE",
     "location": {
       "column": "9",
       "line": "56",
       "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\morse_code_led\\main.c"
     },
-    "name": "morse_base",
+    "name": "MORSE_BASE",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1600@macro@morse_tb_size",
+    "ID": "c:main.c@1600@macro@MORSE_TB_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "morse_tb_size",
+    "display": "MORSE_TB_SIZE",
     "location": {
       "column": "9",
       "line": "58",
       "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\morse_code_led\\main.c"
     },
-    "name": "morse_tb_size",
+    "name": "MORSE_TB_SIZE",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1707@macro@LED1_INIT",
+    "ID": "c:main.c@1705@macro@LED1_INIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED1_INIT",
@@ -3506,7 +3506,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1980@macro@LED1_ON",
+    "ID": "c:main.c@1978@macro@LED1_ON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED1_ON",
@@ -3520,7 +3520,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2100@macro@LED1_OFF",
+    "ID": "c:main.c@2098@macro@LED1_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED1_OFF",
@@ -3534,7 +3534,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2255@macro@LED2_INIT",
+    "ID": "c:main.c@2253@macro@LED2_INIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED2_INIT",
@@ -3548,7 +3548,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2530@macro@LED2_ON",
+    "ID": "c:main.c@2528@macro@LED2_ON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED2_ON",
@@ -3562,7 +3562,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2651@macro@LED2_OFF",
+    "ID": "c:main.c@2649@macro@LED2_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED2_OFF",
@@ -3576,7 +3576,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2772@macro@LED2",
+    "ID": "c:main.c@2770@macro@LED2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED2",
@@ -3590,7 +3590,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2912@macro@LED_INIT",
+    "ID": "c:main.c@2910@macro@LED_INIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_INIT",
@@ -3604,7 +3604,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2940@macro@LED_ON",
+    "ID": "c:main.c@2938@macro@LED_ON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_ON",
@@ -3618,7 +3618,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2964@macro@LED_OFF",
+    "ID": "c:main.c@2962@macro@LED_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LED_OFF",
@@ -3748,7 +3748,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5506@F@delay@i",
+    "ID": "c:main.c@5504@F@delay@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -3762,7 +3762,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5506@F@delay@j",
+    "ID": "c:main.c@5504@F@delay@j",
     "What": "Variable",
     "defdec": "Dec",
     "display": "j",
@@ -3790,7 +3790,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5636@F@transmit_ch@index",
+    "ID": "c:main.c@5634@F@transmit_ch@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
@@ -3804,7 +3804,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5636@F@transmit_ch@len",
+    "ID": "c:main.c@5634@F@transmit_ch@len",
     "What": "Variable",
     "defdec": "Dec",
     "display": "len",
@@ -3818,7 +3818,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5636@F@transmit_ch@code",
+    "ID": "c:main.c@5634@F@transmit_ch@code",
     "What": "Variable",
     "defdec": "Dec",
     "display": "code",
@@ -3832,7 +3832,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5668@F@transmit_ch@code_mask",
+    "ID": "c:main.c@5666@F@transmit_ch@code_mask",
     "What": "Variable",
     "defdec": "Def",
     "display": "code_mask",
@@ -3852,7 +3852,7 @@
     "display": "void transmit_text(const char *, uint32_t)",
     "location": {
       "column": "6",
-      "line": "236",
+      "line": "239",
       "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\morse_code_led\\main.c"
     },
     "name": "transmit_text",
@@ -3866,7 +3866,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "266",
+      "line": "269",
       "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\morse_code_led\\main.c"
     },
     "name": "main",
@@ -3874,13 +3874,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7267@F@main@name",
+    "ID": "c:main.c@7313@F@main@name",
     "What": "Variable",
     "defdec": "Def",
     "display": "name",
     "location": {
       "column": "16",
-      "line": "268",
+      "line": "271",
       "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment03\\morse_code_led\\main.c"
     },
     "name": "name",

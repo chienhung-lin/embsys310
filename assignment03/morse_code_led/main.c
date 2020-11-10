@@ -53,9 +53,9 @@
 #define DASH_BIT (0x1)
 #define DOT_BIT (0x0)
 
-#define morse_base ((uint32_t)'0')
+#define MORSE_BASE ((uint32_t)'0')
 
-#define morse_tb_size (sizeof(morse_table[]) / sizeof(morse_table[0]))
+#define MORSE_TB_SIZE (sizeof(morse_table) / sizeof(morse_table[0]))
 
 /* MACRO: LED1 INIT, ON, OFF */
 #define LED1_INIT()                     \
@@ -192,7 +192,10 @@ void transmit_ch(uint8_t ch)
     assert(!('0' > ch || 'Z' < ch));
     assert(!('9' < ch && ch < 'A'));
     
-    index = ch - morse_base;
+    index = ch - MORSE_BASE;
+    
+    assert(index < MORSE_TB_SIZE);
+    
     len = morse_table[index].len;
     code = morse_table[index].code;
     
@@ -269,7 +272,8 @@ int main()
     
     LED_INIT();
     
-    transmit_text(name, sizeof(name)/sizeof(name[0]));
+    // Minus one to exclude NULL charachter
+    transmit_text(name, sizeof(name)/sizeof(name[0]) - 1);
     
     while (1) ;
     
