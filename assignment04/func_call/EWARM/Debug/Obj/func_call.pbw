@@ -1,0 +1,170 @@
+[
+  {
+    "ID": "c:@F@func1",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int func1(int, int, int, int, int)",
+    "location": {
+      "column": "5",
+      "line": "2",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "func1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@func2",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void func2(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "func2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@func1",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int func1(int, int, int, int, int)",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "func1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@lvar0",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "lvar0",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "lvar0",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@lvar1",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "lvar1",
+    "location": {
+      "column": "16",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "lvar1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@lvar2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "lvar2",
+    "location": {
+      "column": "23",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "lvar2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@lvar3",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "lvar3",
+    "location": {
+      "column": "30",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "lvar3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@lvar4",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "lvar4",
+    "location": {
+      "column": "37",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "lvar4",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@153@F@func1@sum",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "sum",
+    "location": {
+      "column": "44",
+      "line": "7",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "sum",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@func2",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void func2(void)",
+    "location": {
+      "column": "6",
+      "line": "20",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "func2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@412@F@func2@sum",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sum",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "sum",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "29",
+      "path": "D:\\Documents\\Course\\Certificate Course in UW\\UW_Workspace\\embsys310\\assignment04\\func_call\\EWARM\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]
