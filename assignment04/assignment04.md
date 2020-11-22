@@ -10,7 +10,7 @@
       0x800 0094: DC32    0x4242 0980
       ```
    
-   2. The compiler produces several instructions for operating write-modify-write sequence to toggle the RCC_AHB2ENR register. The instructions are:
+   2. The compiler produces several instructions for operating write-modify-write sequence, and it sets the bit 0 of RCC_AHB2ENR register by OR instruction. The instructions are:
       
       ```
       0x800 005c: LDR.N    R0, [PC, #0x38]
