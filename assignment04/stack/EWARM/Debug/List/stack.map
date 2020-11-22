@@ -1,0 +1,237 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  22/Nov/2020  11:19:21
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Exe\stack.out
+#    Map file     =
+#        D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\List\stack.map
+#    Command line =
+#        -f C:\Users\user\AppData\Local\Temp\EW5B2B.tmp
+#        ("D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Obj\main.o"
+#        "D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Obj\stack.o"
+#        "D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Obj\test_stack.o"
+#        --no_out_extension -o "D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Exe\stack.out"
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map "D:\Documents\Course\Certificate Course in
+#        UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\List\stack.map"
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\ST\stm32l475xG.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x0] |
+                [from 0x800'0000 to 0x80f'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P3":  place in [from 0x2000'0000 to 0x2001'7fff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2|P5"
+  rw section application_specific_rw  in "P2|P5"
+  section .textrw                     in "P4"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0x40
+  .intvec            ro code   0x800'0000    0x40  vector_table_M.o [3]
+                             - 0x800'0040    0x40
+
+"P1":                                       0x6c4
+  .text              ro code   0x800'0040   0x274  test_stack.o [1]
+  .text              ro code   0x800'02b4   0x160  stack.o [1]
+  .text              ro code   0x800'0414    0x24  ABIassert.o [4]
+  .text              ro code   0x800'0438     0x6  abort.o [2]
+  .text              ro code   0x800'043e    0x2e  copy_init3.o [3]
+  .text              ro code   0x800'046c    0x14  exit.o [4]
+  .rodata            const     0x800'0480    0x74  test_stack.o [1]
+  .rodata            const     0x800'04f4    0x70  stack.o [1]
+  .rodata            const     0x800'0564    0x28  stack.o [1]
+  .text              ro code   0x800'058c    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'05b4    0x14  - Linker created -
+  .text              ro code   0x800'05c8    0x1e  cmain.o [3]
+  .text              ro code   0x800'05e6     0x4  low_level_init.o [2]
+  .text              ro code   0x800'05ea     0xa  main.o [1]
+  .text              ro code   0x800'05f4     0x4  exit.o [2]
+  .text              ro code   0x800'05f8     0xa  cexit.o [3]
+  .text              ro code   0x800'0602     0x2  vector_table_M.o [3]
+  .rodata            const     0x800'0604    0x18  stack.o [1]
+  .rodata            const     0x800'061c    0x18  test_stack.o [1]
+  .rodata            const     0x800'0634    0x18  test_stack.o [1]
+  .rodata            const     0x800'064c    0x14  test_stack.o [1]
+  .rodata            const     0x800'0660    0x14  test_stack.o [1]
+  .rodata            const     0x800'0674    0x10  stack.o [1]
+  .rodata            const     0x800'0684    0x10  test_stack.o [1]
+  .rodata            const     0x800'0694    0x10  test_stack.o [1]
+  .rodata            const     0x800'06a4    0x10  test_stack.o [1]
+  .rodata            const     0x800'06b4    0x10  test_stack.o [1]
+  .rodata            const     0x800'06c4    0x10  test_stack.o [1]
+  .rodata            const     0x800'06d4     0xc  test_stack.o [1]
+  .text              ro code   0x800'06e0     0xc  cstartup_M.o [3]
+  .rodata            const     0x800'06ec     0x0  copy_init3.o [3]
+  Initializer bytes  const     0x800'06ec    0x18  <for P3 s0>
+                             - 0x800'0704   0x6c4
+
+"P3", part 1 of 2:                           0x18
+  P3 s0                       0x2000'0000    0x18  <Init block>
+    .bss             inited   0x2000'0000    0x14  stack.o [1]
+    .data            inited   0x2000'0014     0x4  stack.o [1]
+                            - 0x2000'0018    0x18
+
+"P3", part 2 of 2:                         0x2000
+  CSTACK                      0x2000'0018  0x2000  <Block>
+    CSTACK           uninit   0x2000'0018  0x2000  <Block tail>
+                            - 0x2000'2018  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+          0x0          0x0       0x1
+   0x800'0704   0x80f'ffff  0xf'f8fc
+  0x2000'2018  0x2001'7fff  0x1'5fe8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x18:
+           0x800'06ec  0x18
+    1 destination range, total size 0x18:
+          0x2000'0000  0x18
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+D:\Documents\Course\Certificate Course in UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Obj: [1]
+    main.o                 10
+    stack.o               352      216       24
+    test_stack.o          628      296
+    -------------------------------------------
+    Total:                990      512       24
+
+dl7M_tln.a: [2]
+    abort.o                 6
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                 14
+
+rt7M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    copy_init3.o           46
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    -------------------------------------------
+    Total:                204
+
+shb_l.a: [4]
+    ABIassert.o            36
+    exit.o                 20
+    -------------------------------------------
+    Total:                 56
+
+    Linker created                  20    8'192
+-----------------------------------------------
+    Grand Total:        1'264      532    8'216
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'05b4          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'05c8          --   Gb  - Linker created -
+?main                    0x800'05c9         Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0018          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2018          --   Gb  - Linker created -
+Region$$Table$$Base      0x800'05b4          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'05c8          --   Gb  - Linker created -
+__aeabi_assert           0x800'0415   0x24  Code  Gb  ABIassert.o [4]
+__cmain                  0x800'05c9         Code  Gb  cmain.o [3]
+__exit                   0x800'046d   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'043f   0x2e  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'058d   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'06e1         Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'05e7    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  vector_table_M.o [3]
+_call_main               0x800'05d5         Code  Gb  cmain.o [3]
+_exit                    0x800'05f9         Code  Gb  cexit.o [3]
+_main                    0x800'05e3         Code  Gb  cmain.o [3]
+abort                    0x800'0439    0x6  Code  Gb  abort.o [2]
+exit                     0x800'05f5    0x4  Code  Gb  exit.o [2]
+main                     0x800'05eb    0xa  Code  Gb  main.o [1]
+stack                   0x2000'0000   0x14  Data  Lc  stack.o [1]
+stack_empty              0x800'0301   0x2a  Code  Gb  stack.o [1]
+stack_full               0x800'032b   0x2a  Code  Gb  stack.o [1]
+stack_init               0x800'02b5   0x4c  Code  Gb  stack.o [1]
+stack_pop                0x800'03a7   0x58  Code  Gb  stack.o [1]
+stack_ptr               0x2000'0014    0x4  Data  Lc  stack.o [1]
+stack_push               0x800'0355   0x52  Code  Gb  stack.o [1]
+test_stack               0x800'0041  0x274  Code  Gb  test_stack.o [1]
+
+
+[1] = D:\Documents\Course\Certificate Course in UW\UW_Workspace\embsys310\assignment04\stack\EWARM\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  1'264 bytes of readonly  code memory
+    532 bytes of readonly  data memory
+  8'216 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

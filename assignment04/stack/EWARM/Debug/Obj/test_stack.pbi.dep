@@ -1,0 +1,10 @@
+test_stack.pbi: \
+  D:\Documents\Course\Certificate\ Course\ in\ UW\UW_Workspace\embsys310\assignment04\stack\Application\Src\test_stack.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\assert.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  D:\Documents\Course\Certificate\ Course\ in\ UW\UW_Workspace\embsys310\assignment04\stack\EWARM\..\Application\Inc\stack.h \
+  D:\Documents\Course\Certificate\ Course\ in\ UW\UW_Workspace\embsys310\assignment04\stack\EWARM\..\Application\Inc\test_stack.h
