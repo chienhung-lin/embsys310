@@ -1,6 +1,6 @@
 # Assignment \#04
 
-1. 1. The compiler produces "store" instruction for writing a constant to the clock enable register. The produced instructions are:
+1. 1. The compiler produces "store" instruction for writing 0x01 into the alias address of the bit 0 of RCC_AHB2ENR. The instructions are:
       
       ```
       0x800 005c: MOVS    R0, #1
@@ -10,13 +10,15 @@
       0x800 0094: DC32    0x4242 0980
       ```
    
-   2. The compiler produces several instructions for operating write-modify-write sequence to toggle the GPIOA\_ODR register. The instructions are:
+   2. The compiler produces several instructions for operating write-modify-write sequence to toggle the RCC_AHB2ENR register. The instructions are:
       
       ```
-      0x800 007e: LDR.N    R0, [PC, #0x18]
-      0x800 0080: LDR      R1, [R0]     <-- Read
-      0x800 0082: EORS.W   R1, R1, #32  <-- Modify
-      0x800 0086: STR      R1, [R0]     <-- Write
+      0x800 005c: LDR.N    R0, [PC, #0x38]
+      0x800 005e: LDR      R1, [R0]     <-- Read
+      0x800 0060: ORRS.W   R1, R1, #1   <-- Modify
+      0x800 0064: STR      R1, [R0]     <-- Write
+      ...
+      0x800 009c: DC32     RCC_AHB2ENR
       ```
 
 2. 1. The calling function \"fun2\" passes 5 arguments in R0, R1, R2, R3, and one in stack. In assembly code, arguments with value of 0, 1, 2, and 3 are moved indiviually to R0, R1, R2, and R3. The value of 4 is stored into the address which the SP register is pointed to.
