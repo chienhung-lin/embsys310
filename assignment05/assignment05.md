@@ -30,4 +30,6 @@
          
          ![return_from_function](./returning_from_func.PNG)
 
-2. 
+2. Divide Two in assembly module)
+   
+   ![divide_two_term](./divide_two_term.PNG)
