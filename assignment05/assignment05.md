@@ -30,6 +30,10 @@
          
          ![return_from_function](./returning_from_func.PNG)
 
-2. Divide Two in assembly module)
+2. Divide Two in assembly module
    
    ![divide_two_term](./divide_two_term.PNG)
+
+3.  Swap two pointers
+   
+   ![swap_two_pointers](./swap_two_pointers_term.PNG)
