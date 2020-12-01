@@ -51,7 +51,9 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
-
+static void swap_chars_testing(char *c_ptr1, char *c_ptr2);
+extern int divide_two(int num);
+extern int swap_chars(char *c_ptr1, char *c_ptr2);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -66,8 +68,8 @@ static void MX_USART1_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    int number;
-    int result;
+    int number, result;
+    char a, b;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -93,7 +95,7 @@ int main(void)
   
     number = -20;
     
-    while (number <= 20) {
+    while (number <= 10) {
         
         result = divide_two(number);
         
@@ -104,6 +106,16 @@ int main(void)
         
         number += 1;
     }
+    
+    a = 'A';
+    b = 'B';
+    swap_chars_testing(&a, &b);
+    
+    a = 'A';
+    b = 'A';
+    swap_chars_testing(&a, &b);
+    
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -222,6 +234,33 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+static void swap_chars_testing(char *c_ptr1, char *c_ptr2)
+{
+    int result;
+    
+    my_printf_str("a=");
+    my_printf_char(c_ptr1);
+    my_printf_str(",b=");
+    my_printf_char(c_ptr2);
+    my_printf_str("\r\n");
+    
+    result = swap_chars(c_ptr1, c_ptr2);
+    
+    my_printf_str("swap !!!!\r\n");
+    
+    if (result) {
+        my_printf_str("different\r\n");
+    } else {
+        my_printf_str("identical\r\n");
+    }
+    
+    my_printf_str("a=");
+    my_printf_char(c_ptr1);
+    my_printf_str(",b=");
+    my_printf_char(c_ptr2);
+    my_printf_str("\r\n");
+    my_printf_str("============\r\n");
+}
 /* USER CODE END 4 */
 
 /**

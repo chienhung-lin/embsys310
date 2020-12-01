@@ -17,6 +17,16 @@ static inline uint32_t abs(int32_t i32_num);
 
 static uint8_t buff[20];
 
+void my_printf_char(const char *s)
+{
+    uint8_t u8_char = (uint8_t)*s;
+    
+    if (HAL_OK != 
+            HAL_UART_Transmit(&huart1, &u8_char, sizeof(char), 10)) {
+        Error_Handler();
+    }
+}
+
 void my_printf_str(const char *s)
 {
     char ch;
