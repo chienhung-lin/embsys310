@@ -51,7 +51,9 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
+static void divide_two_testing(void);
 static void swap_chars_testing(char *c_ptr1, char *c_ptr2);
+
 extern int divide_two(int num);
 extern int swap_chars(char *c_ptr1, char *c_ptr2);
 /* USER CODE END PFP */
@@ -68,7 +70,6 @@ extern int swap_chars(char *c_ptr1, char *c_ptr2);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    int number, result;
     char a, b;
   /* USER CODE END 1 */
 
@@ -92,20 +93,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  
-    number = -20;
-    
-    while (number <= 10) {
-        
-        result = divide_two(number);
-        
-        my_printf_dec(number);
-        my_printf_str(" ");
-        my_printf_dec(result);
-        my_printf_str("\r\n");
-        
-        number += 1;
-    }
+
+    divide_two_testing();
     
     a = 'A';
     b = 'B';
@@ -233,6 +222,25 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static void divide_two_testing(void)
+{
+    int number, result;
+    
+    number = -10;
+    
+    while (number <= 10) {
+        
+        result = divide_two(number);
+        
+        my_printf_dec(number);
+        my_printf_str(" ");
+        my_printf_dec(result);
+        my_printf_str("\r\n");
+        
+        number += 1;
+    }
+}
 
 static void swap_chars_testing(char *c_ptr1, char *c_ptr2)
 {
