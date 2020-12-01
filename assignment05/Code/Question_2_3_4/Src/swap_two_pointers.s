@@ -45,18 +45,17 @@
 
 ;* declare module name
 ;* still do not the usage of MODULE symbol
-    MODULE  swap_chars
+    MODULE  swap_two_pointers
 
-;* divide_two
-;* prototype :   int swap_chars(char *c_ptr1, char *c_ptr2)
+;* swap_two_pointers
+;* prototype :   void swap_two_pointers(int **de_ptr1, int **de_ptr2)
 ;*   - parameter :
-;*     - char *c_ptr1
-;*     - char *c_ptr2
+;*     - de_ptr1, type: int **
+;*     - de_ptr2, type: int **
 ;*   - return:
-;*     - 0: the value of chars are different
-;*     - 1: the value of chars are same
-;* files:    :   swap_chars.s
-    PUBLIC swap_chars       ;export symbol for being called by other files
+;*     none
+;* files:    :   swap_two_pointers.s
+    PUBLIC swap_two_pointers    ;export symbol for being called by other files
 
 
 ;* section : .text
@@ -73,28 +72,21 @@
 
     THUMB
 
-swap_chars                ; function symbols
-    PUSH   { R4-R6, LR }  ; caller saves LR if it will call a function
-                          ; callee has to save R4-R11 if it will use them
-    LDRB    R4, [R0]      ; copy the value of passed parameters
-    LDRB    R5, [R1]      ; copy the value of passed parameters
+swap_two_pointers         ; function symbols
+    PUSH   { R4, R5 }     ; callee has to save R4-R11 if it will use them
+    LDRB    R4, [R0]      ; extract the value in the address stored in R0
+    LDRB    R5, [R1]      ; extract the value in the address stored in R1
                           ;
-                          ; TODO: try it block
+                          ; swap two pointers
+                          ;   the type of pointers is a pointer to a pointer to
+                          ;   int
                           ;
-                          ; compare two chars
-    MOV    R6, #0         ; R6 is initialized to #0
-    CMP    R4, R5         ; compare R4 and R5
-    BEQ EXIT              ; if R4 is equal to R5, no needs to modify R6
-                          ;   jump to EXIT
-    MOV    R6, #1         ; if R4 is not equal to R5, R6 is assigned to #1
-EXIT
+    STRB    R5, [R0]      ; store the value of R5 to the location in 
+                          ;   the address stored in R0
+    STRB    R4, [R1]      ; store the value of R4 to the location in 
+                          ;   the address stored in R1
                           ;
-                          ; swap two chars
-    STRB    R5, [R0]      ; store the value of R5 to the address stored in R0
-    STRB    R4, [R1]      ; store the value of R4 to the address stored in R1
-                          ;
-    MOV  R0, R6           ; assign the comparison result to R0 as return valute
-    POP  { R4-R6, LR }    ; restore R4-R6 and LR
+    POP  { R4,R5 }        ; restore R4-R5
     BX   LR               ; return to the next address of the calling instruction
                           ; as same as POP { PC }
     
