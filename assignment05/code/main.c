@@ -53,6 +53,7 @@ static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 static void divide_two_testing(void);
 static void swap_chars_testing(char *c_ptr1, char *c_ptr2);
+static void swap_two_pointers_testing(void);
 
 extern int divide_two(int num);
 extern int swap_chars(char *c_ptr1, char *c_ptr2);
@@ -104,7 +105,8 @@ int main(void)
     b = 'A';
     swap_chars_testing(&a, &b);
     
-
+    swap_two_pointers_testing();
+    
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -240,6 +242,7 @@ static void divide_two_testing(void)
         
         number += 1;
     }
+    my_printf_str("============\r\n");
 }
 
 static void swap_chars_testing(char *c_ptr1, char *c_ptr2)
@@ -269,6 +272,33 @@ static void swap_chars_testing(char *c_ptr1, char *c_ptr2)
     my_printf_str("\r\n");
     my_printf_str("============\r\n");
 }
+
+
+static void swap_two_pointers_testing(void)
+{
+    int num1 = 10000, 
+        num2 = 20000;
+    int *num_ptr1 = &num1,
+        *num_ptr2 = &num2;
+    
+    my_printf_str("num_ptr1=");
+    my_printf_hex((unsigned int)num_ptr1);
+    my_printf_str(" num_ptr2=");
+    my_printf_hex((unsigned int)num_ptr2);
+    my_printf_str("\r\n");
+    
+    my_printf_str("swap two pointers\r\n");
+    
+    swap_two_pointers(&num_ptr1, &num_ptr2);
+    
+    my_printf_str("num_ptr1=");
+    my_printf_hex((unsigned int)num_ptr1);
+    my_printf_str(" num_ptr2=");
+    my_printf_hex((unsigned int)num_ptr2);
+    my_printf_str("\r\n");
+    my_printf_str("============\r\n");
+}
+
 /* USER CODE END 4 */
 
 /**

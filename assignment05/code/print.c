@@ -17,6 +17,8 @@ static inline uint32_t abs(int32_t i32_num);
 
 static uint8_t buff[20];
 
+static const char hex_table[] = "0123456789ABCDEF";
+
 void my_printf_char(const char *s)
 {
     uint8_t u8_char = (uint8_t)*s;
@@ -64,6 +66,24 @@ void my_printf_dec(int num)
             Error_Handler();
         }        
     }
+}
+
+void my_printf_hex(unsigned int num)
+{
+    int i = 10;
+    const unsigned int mask = 0x0000000F;
+    
+    buff[i--] = '\0';
+    
+    for (;i > 1; --i) {
+        buff[i] = hex_table[num & mask];
+        num >>= 4;
+    }
+    
+    buff[i--] = 'x';
+    buff[i] = '0';
+    
+    my_printf_str(buff);
 }
 
 /* referenced from

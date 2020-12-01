@@ -7,4 +7,6 @@ void my_printf_str(const char *s);
 
 void my_printf_dec(int num);
 
+void my_printf_hex(unsigned int num);
+
 #endif
